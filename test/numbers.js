@@ -31,5 +31,29 @@ describe('numbers', function(){
     expect(d.format('h:mma')).toBe('11:30pm');
   });
 
+  it('recognises 2 as 2:00am', function(){
+    var d = parseTime('2');
+    expect(moment.isMoment(d)).toBe(true);
+    expect(d.hours()).toBe(2);
+    expect(d.minutes()).toBe(0);
+    expect(d.format('h:mma')).toBe('2:00am');
+  });
+
+  it('recognises 2am as 2:00am', function(){
+    var d = parseTime('2am');
+    expect(moment.isMoment(d)).toBe(true);
+    expect(d.hours()).toBe(2);
+    expect(d.minutes()).toBe(0);
+    expect(d.format('h:mma')).toBe('2:00am');
+  });
+
+  it('recognises 2pm as 2:00pm', function(){
+    var d = parseTime('2pm');
+    expect(moment.isMoment(d)).toBe(true);
+    expect(d.hours()).toBe(14);
+    expect(d.minutes()).toBe(0);
+    expect(d.format('h:mma')).toBe('2:00pm');
+  });
+
 
 });

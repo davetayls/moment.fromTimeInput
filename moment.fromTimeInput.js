@@ -17,10 +17,22 @@
   function fromTimeInput(str){
     str = str.replace(/\./g, ':');
 
-    // Parse just numbers like 200 as 2:00
-    if (!(/[^\d]/.test(str))) {
+    // Parse just numbers like 200, 2am, 2pm as 2:00
+    if (!(/[^\dapm]/i.test(str))) {
       var value = parseInt(str, 10);
-      str = (value/100).toFixed(2).replace('.', ':');
+      var tstr;
+      if (value < 100) {
+        tstr = value.toFixed(2).replace('.', ':');
+      } else {
+        tstr = (value/100).toFixed(2).replace('.', ':');
+      }
+      if (/a/i.test(str)) {
+        str = tstr + 'am';
+      } else if (/p/i.test(str)) {
+        str = tstr + 'pm';
+      } else {
+        str = tstr;
+      }
     }
 
     // Parse hours and minutes
