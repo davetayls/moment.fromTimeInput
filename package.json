@@ -1,0 +1,34 @@
+{
+  "name": "parseTime",
+  "version": "0.0.0",
+  "description": "Simple time parsing",
+  "main": "parseTime.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davetayls/parseTime.git"
+  },
+  "keywords": [
+    "time",
+    "parse"
+  ],
+  "author": "davetayls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davetayls/parseTime/issues"
+  },
+  "homepage": "https://github.com/davetayls/parseTime",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-mocha": "^0.4.11",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "grunt-contrib-jasmine": "^0.7.0"
+  }
+}

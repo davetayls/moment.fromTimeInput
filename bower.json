@@ -1,0 +1,28 @@
+{
+  "name": "parseTime",
+  "main": "parseTime.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/davetayls/parseTime",
+  "authors": [
+    "davetayls <dave@the-taylors.org>"
+  ],
+  "description": "Simple time parser for time boxes",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "time",
+    "parse"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "momentjs": "~2.8.1"
+  }
+}
