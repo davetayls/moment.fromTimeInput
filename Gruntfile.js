@@ -13,7 +13,7 @@ module.exports = function(grunt){
         },
         src: [
           'bower_components/momentjs/moment.js',
-          'moment.parseTime.js'
+          'moment.fromTimeInput.js'
         ]
       }
     },
@@ -21,7 +21,7 @@ module.exports = function(grunt){
       test: {
         files: [
           'test/*.js',
-          'moment.parseTime.js'
+          'moment.fromTimeInput.js'
         ],
         tasks: ['jasmine']
       }

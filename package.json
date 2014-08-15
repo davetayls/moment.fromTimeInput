@@ -1,8 +1,8 @@
 {
-  "name": "parseTime",
+  "name": "moment.fromTimeInput",
   "version": "0.0.0",
   "description": "Simple time parsing",
-  "main": "parseTime.js",
+  "main": "moment.fromTimeInput.js",
   "directories": {
     "test": "test"
   },
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/davetayls/parseTime.git"
+    "url": "git://github.com/davetayls/moment.fromTimeInput.git"
   },
   "keywords": [
     "time",
@@ -20,9 +20,9 @@
   "author": "davetayls",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davetayls/parseTime/issues"
+    "url": "https://github.com/davetayls/moment.fromTimeInput/issues"
   },
-  "homepage": "https://github.com/davetayls/parseTime",
+  "homepage": "https://github.com/davetayls/moment.fromTimeInput",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-mocha": "^0.4.11",
