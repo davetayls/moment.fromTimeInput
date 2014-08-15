@@ -1,8 +1,8 @@
 {
-  "name": "parseTime",
-  "main": "parseTime.js",
+  "name": "moment.fromTimeInput",
+  "main": "moment.fromTimeInput.js",
   "version": "0.0.0",
-  "homepage": "https://github.com/davetayls/parseTime",
+  "homepage": "https://github.com/davetayls/moment.fromTimeInput",
   "authors": [
     "davetayls <dave@the-taylors.org>"
   ],
